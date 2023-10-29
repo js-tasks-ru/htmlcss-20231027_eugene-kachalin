@@ -1,18 +1,60 @@
 <!DOCTYPE html>
 <!-- Страница с аккордеоном -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./accordion.css">
-    </head>
-    <body>
-        <details>
-            <summary>
-                Accordion item
+
+<head>
+    <style type="text/css">
+        body {
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            width: 70%;
+            border: solid 5px;
+            padding: 10px;
+        }
+
+        code {
+            display: inline;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./accordion.css">
+</head>
+
+<body>
+    <div class="accordion">
+        <details class="accordion__item accordion__item_closed">
+            <summary class="accordion__item__summary">
+                Система контроля версий (<em>GIT</em>)
             </summary>
-            <p>
-                Hidden content
-            </p>
+            <div class="accordion__item__text">
+                <p>
+                    <em>Git</em> — это инструмент, без которого сложно представить себе современную разработку. Если вы с ней еще не знакомы — ничего страшного, нам нужны только самые основные операции, которые запомнить достаточно просто, но которые при этом используются в 95% случаев. Скачать и установить <code>git</code> можно с официального сайта.
+                </p>
+            </div>
         </details>
-    </body>
+        <details class="accordion__item" open>
+            <summary class="accordion__item__summary">
+                Консоль
+            </summary>
+            <div class="accordion__item__text">
+                <p>
+                    Для выполнения различных команд <code>git</code> нам понадобится специальная программа, которая по умолчанию есть во всех операционных системах. В Linux и MacOS она называется <code>terminal</code>, в Windows — <code>cmd</code> или командная строка.
+                </p>
+            </div>
+        </details>
+        <details class="accordion__item accordion__item_closed">
+            <summary class="accordion__item__summary">
+                Редакторы кода
+            </summary>
+            <div class="accordion__item__text">
+                <p>
+                    Если у вас уже есть любимый редактор кода — вы можете вести разработку в нем. Ниже представлены на выбор несколько редакторов кода, в которых вы можете удобно решать задачи курса. Все редакторы в списке ниже являются кроссплатформенными, т. е. будут работать в любой операционной системе.
+                </p>
+            </div>
+        </details>
+    </div>
+</body>
+
 </html>
